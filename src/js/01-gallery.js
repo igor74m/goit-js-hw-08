@@ -1,5 +1,5 @@
 // Add imports above this line
-import { galleryItems } from './gallery-items';
+import { galleryItems } from './gallery-items.js';
 // Change code below this line
 
 import SimpleLightbox from "simplelightbox";
@@ -23,6 +23,5 @@ galleryEl.insertAdjacentHTML('beforeend', galleryMarkup);
         {
             captionDelay: 250,
             captionsData: "alt",
-            preloading: false,
         });
 

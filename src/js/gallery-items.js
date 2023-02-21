@@ -65,38 +65,3 @@ export const galleryItems = [
   },
 ];
 
-const form = document.querySelector('.feedback-form');
-const button = document.querySelector('.feedback-form button');
-
-
-const STORAGE_KEY = "feedback-form-state";
-
-form.addEventListener('input', onClickInput);
-button.addEventListener('submit', onSubmitButton);
-
-function onClickInput(e) {
-  const email = e.currentTarget.value;
-  console.log(email);
-
-  localStorage.setItem(STORAGE_KEY, email
-  //  `{email: ${ email.value } , message: ${message.value}}`);
-  );
-   
-  // console.log(`email: ${ email.value }, messag: ${message.value}`);
-};
-
-function onSubmitButton(e) {
-  e.preventDefault();
-
-  console.log(`email: ${ email.value }, password: ${message.value}`);
-
-  // localStorage.removeItem(STORAGE_KEY);
-
-  // e.target.reset();
-};
-
-// function returnInput(e) {
-//   const saveInput = localStorage.getItem(STORAGE_KEY);
-
-//   refs.input.elements.value = saveInput;
-// }
